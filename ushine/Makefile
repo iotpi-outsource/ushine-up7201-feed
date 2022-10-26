@@ -12,7 +12,7 @@ define Package/ushine-fsk
   TITLE:=Ushine UP7201 FSK
   HIDDEN:=1
   DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688 \
-  	+uci +ubus \
+  	+libuci +ubus +libcares +libmosquitto \
 	+mtk-linkit-webui
 
   CATEGORY:=Base system
@@ -23,7 +23,10 @@ define Build/Prepare
 	mkdir -p $(PKG_BUILD_DIR)
 endef
 
-define Package/inkit/install
+define Build/Compile
+endef
+
+define Package/ushine-fsk/install
 	$(INSTALL_DIR) $(1)/bin
 	
 	$(CP) ./files/* $(1)
