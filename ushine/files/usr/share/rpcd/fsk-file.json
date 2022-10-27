@@ -1,0 +1,15 @@
+{
+  "fsk": {
+    "description": "ACL for FSK",
+    "read": {
+      "ubus": {
+        "file": ["*"]
+      }
+    },
+    "write": {
+      "ubus": {
+        "file": ["*"]
+      }
+    }
+  }
+}
