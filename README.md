@@ -1,3 +1,12 @@
+# Update ushine
+ushine/files
+
+mtk-linkit-webui/Makefile
+
+## under openwrt dev env
+./scripts/feed update linkit
+./build.sh
+
 # linkit-smart-feed
 This feeds holds the SDK wifi driver and the config/meta package for the LinkIt Smart 7688 (Duo)
 
