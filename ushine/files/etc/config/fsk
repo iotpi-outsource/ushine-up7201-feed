@@ -1,5 +1,6 @@
 # /etc/config/fsk
 config fsk 'beacon'
+       option addr 'deaddead'
        option port '/dev/ttyS0'
        option baudrate '115200'
        option freq '902000000'
