@@ -1,0 +1,1 @@
+uci set rpcd.@login[0].username='admin'
