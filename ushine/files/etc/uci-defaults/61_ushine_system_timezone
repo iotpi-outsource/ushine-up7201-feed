@@ -1,1 +1,2 @@
 uci set system.@system[-1].timezone="CST-8"
+uci commit system
