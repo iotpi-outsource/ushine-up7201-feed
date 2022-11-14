@@ -1,2 +1,2 @@
-uci set rpcd.@login[0].username='admin'
-uci commit rpcd
+# uci set rpcd.@login[0].username='admin'
+# uci commit rpcd
