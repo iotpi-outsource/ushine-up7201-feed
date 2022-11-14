@@ -1,2 +1,3 @@
 uci set system.@system[-1].timezone="CST-8"
+uci set system.@system[-1].zonename=""Asia/Taipei
 uci commit system
