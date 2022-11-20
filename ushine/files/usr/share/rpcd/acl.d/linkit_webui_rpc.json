@@ -1,0 +1,15 @@
+{
+	"linkit-webui": {
+		"description": "Access group which allows ubus network",
+		"read": {
+			"ubus": {
+				"network": [ "*" ]
+			}
+		},
+		"write": {
+			"ubus": {
+				"network": [ "*" ]
+			}
+		}
+	}
+}
