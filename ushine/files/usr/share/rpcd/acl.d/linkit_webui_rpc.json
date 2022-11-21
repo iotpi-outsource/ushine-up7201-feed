@@ -4,12 +4,15 @@
 		"read": {
 			"ubus": {
 				"network": [ "*" ]
-			}
+			},
+            "uci": ["dhcp"]
 		},
 		"write": {
 			"ubus": {
-				"network": [ "*" ]
-			}
+				"network": [ "*" ],
+                "uci": [ "delete" ]
+			},
+            "uci": ["dhcp"]
 		}
 	}
 }
