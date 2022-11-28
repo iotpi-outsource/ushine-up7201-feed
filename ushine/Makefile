@@ -13,7 +13,7 @@ define Package/ushine-fsk
   HIDDEN:=1
   DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688 \
   	+libuci +ubus +libcares +libmosquitto \
-	+mtk-linkit-webui
+	+curl +libstdcpp
 
   CATEGORY:=Base system
   DEFAULT:=y
