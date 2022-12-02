@@ -1,0 +1,23 @@
+#!/bin/sh
+
+[ "${ACTION}" = "released" -o "${ACTION}" = "timeout" ] || exit 21
+
+. /lib/functions.sh
+
+logger "$BUTTON pressed for $SEEN seconds"
+
+# factory reset
+if [ "$SEEN" -gt 10 ]
+then
+	[ -f /tmp/.factory_reset ] && return
+	echo timer > /sys/class/leds/mediatek\:orange\:wifi/trigger
+	echo 100 > /sys/class/leds/mediatek\:orange\:wifi/delay_on
+	echo 100 > /sys/class/leds/mediatek\:orange\:wifi/delay_off
+	touch /tmp/.factory_reset
+	echo "FACTORY RESET" > /dev/console
+	jffs2reset -y
+	sync
+	reboot
+fi
+
+return 0
