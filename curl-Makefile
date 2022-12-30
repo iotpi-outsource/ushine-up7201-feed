@@ -100,7 +100,7 @@ endef
 TARGET_CFLAGS += $(FPIC)
 
 CONFIGURE_ARGS += \
-	--enable-debug \
+	--disable-debug \
 	--disable-ares \
 	--enable-shared \
 	--enable-static \
