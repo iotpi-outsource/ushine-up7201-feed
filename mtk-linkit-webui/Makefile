@@ -7,13 +7,13 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=mtk-linkit-webui
-PKG_VERSION:=2015-07-07
+PKG_VERSION:=2024-06-12
 PKG_RELEASE=$(PKG_SOURCE_VERSION)
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/iotpi-outsource/ushine-up7201-webUI.git
+PKG_SOURCE_URL:=https://gitee.com/sprhawk/ushine-up7201-webUI.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=d339d5e819157b9edd720ced1105e20402d7d00e
+PKG_SOURCE_VERSION:=6f06571b6027e714072fe9a51ee27eaaa4796a44
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 
 include $(INCLUDE_DIR)/package.mk
